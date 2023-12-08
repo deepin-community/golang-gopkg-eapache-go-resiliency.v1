@@ -1,5 +1,81 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-gopkg-eapache-go-resiliency.v1 (1.2.0-1) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Wrap long lines in changelog entries: 1.0.0-6.
+  * Update watch file format version to 4.
+  * Bump debhelper from old 12 to 13.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Anthony Fok ]
+  * New upstream version 1.2.0
+  * Apply "cme fix dpkg" fixes
+    - Reorder fields in debian/control
+    - Bump Standards-Version to 4.6.0 (no change)
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Change Section from devel to golang
+  * Replace dependency on golang-go with golang-any
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Mark library package with "Multi-Arch: foreign"
+  * Update debian/watch to the one generated with the latest dh-make-golang
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Wed, 20 Oct 2021 00:45:41 -0600
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-6) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 06 Feb 2021 15:10:48 +0000
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-5) unstable; urgency=medium
+
+  * Team upload.
+  * Removed myself from uploaders.
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 15 Sep 2019 19:12:02 -0400
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-4) unstable; urgency=medium
+
+  * Team upload.
+  * Vcs-* urls: pkg-go-team -> go-team.
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 05 Feb 2018 23:10:47 -0500
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-3) unstable; urgency=medium
+
+  * point Vcs-* urls to salsa.d.o subproject
+
+ -- Alexandre Viau <aviau@debian.org>  Thu, 25 Jan 2018 15:39:20 -0500
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-2) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Remove Built-Using from arch:all -dev package
+
+  [ Alexandre Viau ]
+  * Testsuite: autopkgtest-pkg-go
+  * Fix priority-extra-is-replaced-by-priority-optional
+
+ -- Alexandre Viau <aviau@debian.org>  Fri, 29 Dec 2017 22:13:43 -0500
+
+golang-gopkg-eapache-go-resiliency.v1 (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version name (same code)
+  * Added watch file
+  * Changed my email to @debian.org
+  * Bumped Standards-Version to 3.9.7
+  * Changed Vcs-Brower and Vcs-Git to secure (https) urls
+  * Switched to using XS-Go-Import-Path
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 29 Mar 2016 09:47:39 -0400
+
+golang-gopkg-eapache-go-resiliency.v1 (0.0~git20150213.0.6800482-1) unstable; urgency=medium
+
+  * Initial release (Closes: #794497)
+
+ -- Alexandre Viau <alexandre@alexandreviau.net>  Mon, 03 Aug 2015 14:23:03 -0400
